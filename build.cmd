@@ -2,6 +2,8 @@
 @echo test cpmmit
 setlocal
 
+@echo This is a test and can be deleted
+
 if "%1"=="/?" goto usage
 if "%1"=="-?" goto usage
 
@@ -9,6 +11,8 @@ if "%1"=="-?" goto usage
 @echo Deleting previous build
 
 if exist build rmdir /S/Q build
+
+@echo This is a test and can be deleted
 
 @echo Building Debug
 set Configuration=Debug
@@ -105,7 +109,7 @@ goto end
 exit /b 0
 
 :usage
-@echo.
+
 @echo Builds Inst4WA for external release
 @echo Usage: build
 goto end
