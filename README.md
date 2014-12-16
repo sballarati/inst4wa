@@ -3,11 +3,9 @@ Inst4WA - Simple Deployment Framework for Windows Azure
 
 ## Introduction
 
+## Another e2e test
+
 ## Testing
-
-This comment is added only for testing purpose. Not to taken seriously.
-
-Test comment to evaluate CLA work flow
 
 ## Introduction
 
@@ -29,11 +27,10 @@ The following steps are common to all the sections below:
 
 6. Please make sure that you unblock all the dll's and config files using instructions at http://msdn.microsoft.com/en-us/library/ee890038(VS.100).aspx. 
 
-## Specific Steps for Deploying a HelloWorld Solution Consisting of a WebRole (PaaS)
-
-1. The HelloWorld with WebRole binaries are included in the build inside the TestData\WebRole directory.
-
-2. The configuration XML file to be used for deploying this solution is 'TestCases\StaticTests-Azure\HelloWorldWebRoleWR.xml' 
+## Another e2e test
+## Another e2e test
+## Another e2e test
+## Another e2e test
 
 3. Use the following command to deploy the solution to Windows Azure: 
 
@@ -64,14 +61,6 @@ The following steps are common to all the sections below:
     Inst4WA.exe -XmlConfigPath "TestCases\StaticTests-Azure\HelloWorldVMRole.xml" -DomainName "\<your unique name\>" -Subscription "\<your subscription name\>" -Location "\<data center location\>" -Force "\<True or False\>"
 
 4. The above command will create a Hello World IaaS service under the given subscription in the specified data center location and with a deployment URL that is based on the specified domain name. Each VM in the service will have the Windows Web Server Role enabled and a TCP endpoint connected to it, so you can connect to it from the outside. The Location parameter specifies the Windows Azure data center location where the service and its storage account will be located. The "Force" parameter specifies what should be done in case a previous instance of the service already exists. Setting "Force" to "true" will delete all the VM's associated with the previous instance. Setting it to "false" will lead to simply reusing the VM's from the previous instance. Please refer to the HelloWorldVMRole.xml for description of other parameters and steps involved.
-
-## Steps for Deploying CouchDb PaaS or IaaS Solution to Windows Azure
-
-Please refer to the ReadMe at the https://github.com/MSOpenTech/Windows-Azure-CouchDB.
-
-## Steps for Deploying Solr PaaS Solution to Windows Azure
-
-Please refer to the ReadMe at the https://github.com/MSOpenTech/Windows-Azure-Solr.
 
 ## Specific Steps for Executing Automated Test Cases
 
